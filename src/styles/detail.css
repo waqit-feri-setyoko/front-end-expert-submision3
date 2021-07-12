@@ -1,0 +1,130 @@
+/* 
+* 
+*/
+ul{
+    list-style-type: none;
+}
+
+/* Box Shadow*/
+.container-detail, .container-menus, .item-drink, .item-food, .container-reviews, .item-review{
+    box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Overflow */
+.container-reviews, .container-menus{
+    overflow: auto;
+}
+
+/* Position */
+.container-detail, .container-menus, .container-reviews{
+    position: relative;
+}
+
+/* Display */
+.inherit-menus, .reviews{
+    display: grid;
+}
+/* Border */
+.container-detail, .container-menus, .container-reviews{
+    border-radius: 5px;
+}
+
+/* Margin */
+.container-detail, .container-menus, .item-drink, .item-food{
+    margin: 8px;
+}
+
+.text-menu, .item-review, .text-review{
+    margin-top: 10px;
+}
+
+/* Padding */
+.item-food, .item-drink{
+    padding: 7px;
+}
+
+.review,.date-review, .name-review{
+    padding: 5px;
+}
+
+/* Font Size */
+.item-drink, .item-food, .item-review{
+    font-size: 12px;
+}
+
+.container-foods h3, .container-drinks h3, .item-detail{
+    font-size: 1em;
+}
+.text-menu, .container-reviews h2{
+    font-size: 1.1em;
+}
+
+/* Text Align */
+.fa-map-marker-alt, .container-foods h3, .container-drinks h3, .text-menu, .container-reviews h2{
+    text-align: center;
+}
+
+/* Height */
+
+.text-menu, .text-review{
+    max-height: 40px;
+}
+
+
+.container-menus, .container-reviews{
+    height: 350px;
+}
+
+/* Single */
+.container-detail{
+    height: auto;
+}
+
+.container-picture{
+    max-height: 75%;
+}
+
+.picture{
+    width: 100%;
+    max-height: 382px;
+}
+
+.item-detail{
+    border-bottom: 1px solid black;
+    margin: 10px 8px 10px 0px;
+}
+.fa{
+    padding-bottom: 5px;
+}
+
+.fa-map-marker-alt{
+    padding-left: 3px;
+}
+
+.info-detail{
+    margin: 10px 10px auto 10px;
+}
+
+.inherit-menus{
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.container-foods, .container-drinks{
+    margin: 0px 10px 15px 10px;
+}
+
+.container-reviews{
+    margin: 15px 8px 15px 8px;
+}
+
+.container-reviews h2{
+    margin-top: 10px;
+}
+
+.reviews{
+    grid-template-columns: 1fr ;
+    margin: 15px 10px 10px 10px; 
+}
+
+

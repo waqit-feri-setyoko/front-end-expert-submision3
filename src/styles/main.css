@@ -1,0 +1,304 @@
+/**
+*
+**/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**
+Skip Content
+**/
+
+.skip-content{
+    position: absolute;
+    font-size: 17px;
+    line-height: 40px;
+    top: -100px;
+    left: 0;
+    background-color: rgb(47, 72, 191,0.8);
+    color: white;
+    padding: 8px;
+    min-height: 45px;
+    z-index: 100;
+    outline: 3px solid skyblue;
+}
+
+.skip-content:focus{
+    top: 4px;
+}
+
+
+
+
+/**
+Header
+**/
+
+.header{
+    min-height: 50px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.header-tittle {
+    line-height: 50px;
+    text-align: left;
+    font-weight: 300;
+    min-width: 150px;
+    font-family: "comic-sans";
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.header-tittle a{
+    text-decoration: none;
+    color: rgb(47, 72, 191);
+    text-shadow: 1px 2px 5px rgb(102, 166, 238);
+}
+
+.header-tittle a:focus{
+    outline: 3px solid skyblue;
+    color: white;
+    background-color: rgb(47, 72, 191,0.8);
+}
+
+/**
+Nav Bar
+**/
+.nav-bar{
+    text-align: right;
+    margin: auto 0;
+}
+
+.nav-item{
+    display: inline-block;
+    padding: 1.3em;
+    color: #616161;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: rgb(48, 45, 45);
+    font-size: 15px;
+    min-width: 44px;
+    padding: 16px 0;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+    color: rgb(65, 96, 236);
+}
+
+.nav-item a:focus{
+    outline: 3px solid skyblue;
+    background-color: rgb(47, 72, 191,0.8);
+    color: #ffffff;
+    
+}
+
+/**
+Menu
+**/
+.menu{
+    font-size: 32px;
+    margin: 10px 10px 10px auto; 
+    display: block;
+    width: 44px;
+    border: none;
+    color: black;
+    background-color: white;
+}
+
+.menu:focus{
+    outline: 4px solid skyblue;
+    background-color: rgb(47, 72, 191,0.8);
+    color: #ffffff;
+}
+
+/**
+Hero
+**/
+.hero{
+    align-items: center;
+    min-height: 380px;
+    width: 100%;
+    background-image: url("./images/hero-image-small.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-inner{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    min-height: 200px;
+    align-items: center;
+    text-shadow: 1px 2px 5px rgb(49, 135, 233);
+}
+
+.hero-tittle{
+    font-size: 24px;
+    margin-top: 150px;
+}
+
+.hero-description{
+    font-size: 1.7em;
+    padding-top: 10px;
+}
+/**
+Main
+**/
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/**
+Content
+**/
+
+.content{
+    padding: 10px;
+}
+
+/**
+Posts
+**/
+
+.fav-not-found{
+    margin-top: 15px;
+    height: 800px;
+}
+
+.content-heading{
+    text-align: center;
+}
+
+.post{
+    width: 100%;
+    display: grid;
+}
+
+.post-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 16px 0px;
+}
+
+.post-city{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgb(47, 72, 191);
+    padding: 0.4em 1.3em;
+    border-bottom-right-radius: 1em;
+    z-index: 1;
+    min-width: 72px;
+    min-height: 30px;
+    opacity: 0.9;
+    
+}
+
+.container-rating .fa{
+    padding: 0.3em 0.8em 0.3em 0;
+    color: gold;
+}
+
+.container-rating{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: rgb(47, 72, 191);
+    padding: 0.4em 1.3em;
+    border-bottom-left-radius: 1em;
+    z-index: 1;
+    min-width: 72px;
+    min-height: 30px;
+    opacity: 0.9;
+    
+}
+
+.post-item-content{
+    padding: 12px ;
+}
+
+.detail{
+    text-decoration: none;
+}
+.post-tittle, .post-description{
+    color: black;
+}
+
+.post-description{
+    padding-top: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.thumbnail{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    min-height: 200px;
+    max-height: 600px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+
+.post-thumbnail{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    object-fit: cover;
+}
+
+
+.thumbnail:hover{
+    opacity: 0.9;
+}
+/**
+Footer
+**/
+
+.footer{
+    width: 100%;
+    color: #ffffff;
+    background-color: #2F48BF;
+    display: grid;
+
+}
+
+.footer-copyright{
+    text-align: center;
+    padding: 10px;
+}
+
+
+ 
